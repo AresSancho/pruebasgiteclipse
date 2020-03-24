@@ -40,4 +40,6 @@ ventana.geometry("930x360")
 ventana.title("PINCHA PARA ADIVINAR LAS DIFERENCIAS A LA DERECHA")
 ventana.bind("<Button 1>",click_raton)
 
+#nuevo codigo
+
 ventana.mainloop()
