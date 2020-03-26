@@ -5,7 +5,9 @@ Para mostrar un ejemplo sobre eventos
 y diferentes componentes visuales.
 '''
 from tkinter import *
+from tkinter import messagebox
 import time 
+
 #tkinter esta disponible por defecto en python
 #otro recurso muy usado es pyQt5
 
@@ -29,6 +31,8 @@ def click_raton(evento):
     else:
         print("NO HAS ADIVINADO UNA DIFERENCIA")    
     
+
+
 #end click_raton
 ventana = Tk()
 canvas = Canvas(ventana, width = 800, height = 600)
@@ -40,6 +44,11 @@ ventana.geometry("930x360")
 ventana.title("PINCHA PARA ADIVINAR LAS DIFERENCIAS A LA DERECHA")
 ventana.bind("<Button 1>",click_raton)
 
-#nuevo codigo
+#parte de carga del archivo que va a listar los jugadores
+texto_listado = "aun no tengo jugadores"
+messagebox.showinfo(title="Listado de jugadores",message=texto_listado)
+#fin listado jugadores  
+
+#nuevos cambios
 
 ventana.mainloop()
